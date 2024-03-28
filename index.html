@@ -14,17 +14,26 @@
         <li><a href="/" data-after="Home">Home</a></li>
         <li><a href="pages/Project.html" data-after="Projects">Projects</a></li>
         <li><a href="pages/About.html" data-after="About">About</a></li>
-        <li><a href="/pages/Contact.html" data-after="Contact">Contact</a></li>
+        <li><a href="pages/Contact.html" data-after="Contact">Contact</a></li>
         </ul>
         </div>
         
     <div class="content">
         <h1>Paracle Games brought to you by</h1>
         <p>Making games since 2023</p>
-        <div>
-           <button type="button"><span></span>Projects</button>
-            <button type="button"><span></span>About Us</button>
-        </div>
-    </div>
+<div>
+  <button type="button" class="button-link" onclick="navigateTo('pages/Project.html')">
+    <span></span>Projects
+  </button>
+
+  <button type="button" class="button-link" onclick="navigateTo('pages/About.html')">
+    <span></span>About Us
+  </button>
+</div>
+<script>
+  function navigateTo(url) {
+    window.location.href = url;
+  }
+</script>
     </body>
 </html>
